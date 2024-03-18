@@ -58,7 +58,7 @@
             fetch(url).then(y => y.json()).then(y => {
                 console.log(y);
                 Arr = y.data;
-                dis(mydata);
+                dis(Arr);
             });
         }
 
@@ -78,7 +78,6 @@
             let productDetails = Arr.filter(function (value) {
                 return value.title.toLowerCase().includes(p);
             })
-            // console.log(productDetails)
             dis(productDetails);
         }
 
